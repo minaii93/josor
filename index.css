@@ -161,5 +161,9 @@ footer{
     .tartalom{
         grid-template-columns: 1fr;
     }
+
+    nav{
+        grid-template-columns: 1fr;
+    }
    
 }
