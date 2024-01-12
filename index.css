@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    font-family: arial,verdana,sans-serif;
+    color:beige;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body{
+    background-image: url(/képek/teglafal.jpg);
+}
+
+header{
+    background-image: url(/);
+}
+
+nav{
+    
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
