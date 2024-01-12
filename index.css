@@ -19,17 +19,25 @@ body{
 
 header{
     background-image: url(/képek/beer-new_401732638.jpg);
-    height: 4%;
+    height: 400px;
     background-size: cover;
     align-items: center;
     margin-left: 100px;
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36pt;
+    padding-top: 20px;
+    padding-left: 20px;
+
 
 
 }
 
 nav{
     align-items:end;
+    text-decoration: none;
+    list-style: none;
+    background-color: grey;
 
 }
 
@@ -54,3 +62,8 @@ nav{
     width: 80%;
     align-items: center;
   }
+
+.tartalom{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
