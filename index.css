@@ -13,44 +13,73 @@
 
 body{
     background-image: url(/képek/teglafal.jpg);
-    width: 80%;
-    height: auto;
+    width: 1000px;
+    margin: auto;
 }
 
 header{
     background-image: url(/képek/beer-new_401732638.jpg);
     height: 400px;
     background-size: cover;
+    background-repeat: no-repeat;
     align-items: center;
-    margin-left: 100px;
+   
+
+
+
+}
+
+header h1{
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 36pt;
-    padding-top: 20px;
-    padding-left: 20px;
-
-
-
+    font-family: Garamond;
+    font-size: 32px;
+    padding-top: 30px;
+    padding-left: 30px;
+    letter-spacing: 4px;
 }
 
 nav{
-    align-items:end;
+    margin: 10px;
+    height: auto;
     text-decoration: none;
     list-style: none;
-    background-color: grey;
+    background-color: #333333 ;
+
+}
+nav ul {
+    display: grid;
+}
+
+nav li{
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
 
 }
 
-#customers td, #customers th {
+nav li:hover{
+    cursor: pointer;
+    color: beige;
+}
+
+.customers td, .customers th {
     border: 1px solid #ddd;
     padding: 8px;
   }
   
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  .customers tr:nth-child(even){background-color: #f2f2f2;}
   
-  #customers tr:hover {background-color: #ddd;}
+  .footer tr:hover {background-color: #ddd;}
   
-  #customers th {
+  .customers th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -59,11 +88,78 @@ nav{
   }
 
   main{
-    width: 80%;
+    max-width: 1000px;
     align-items: center;
+    background-color: #333333;
+    
   }
 
 .tartalom{
     display: grid;
     grid-template-columns: 3fr 1fr;
+}
+
+article {
+    text-align: justify;
+    font-size: 10px;
+    display: grid;
+    background-color: black;
+    padding-bottom: 50px;
+    
+
+}
+
+article h1{
+    padding-left: 20px;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+article img{
+    height: 150px;
+    width: 150px;
+    display: grid;
+    margin-left: 20px;
+    padding: 10px;
+    border: solid 1px #515151;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+article ul{
+    margin-top: 30px;
+}
+
+article ul li {
+    list-style: square;
+    padding-right: 20px;   
+
+}
+
+.kep_elhelyez{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    align-items: center;
+}
+
+footer{
+    width: auto;
+    background-color: #b6b6b6;
+    text-align: center;
+    padding: 5px;
+
+}
+
+  @media screen and (max-width: 700px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+    
+    .tartalom{
+        grid-template-columns: 1fr;
+    }
+   
 }
